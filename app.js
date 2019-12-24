@@ -7,6 +7,7 @@ import findCommonDivisor from './algorithms/findCommonDivisor'
 import removeDuplicates from './algorithms/removeDuplicates'
 import checkPalindrome from './algorithms/checkPalindrome'
 import executeOrder from './algorithms/executeOrder'
+import hoistingExample from './algorithms/hoistingExample'
 
 
 // app.get('/', function (req, res) {
@@ -37,5 +38,8 @@ app.listen(3000, function () {
 // check if the string is palindrome
 // console.log(checkPalindrome('A, man a plan a canal Panama'))
 
+// find description in related file algorithms/excecuteOrder.js
+// executeOrder()
 
-executeOrder()
+// Hoisting
+hoistingExample()
