@@ -8,6 +8,7 @@ import removeDuplicates from './algorithms/removeDuplicates'
 import checkPalindrome from './algorithms/checkPalindrome'
 import executeOrder from './algorithms/executeOrder'
 import hoistingExample from './algorithms/hoistingExample'
+import findFriends from './algorithms/findFriends'
 
 
 // app.get('/', function (req, res) {
@@ -42,4 +43,7 @@ app.listen(3000, function () {
 // executeOrder()
 
 // Hoisting
-hoistingExample()
+// hoistingExample()
+
+findFriends(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
+// returnStringAsSortedBlocks('21AxBz')
