@@ -9,6 +9,7 @@ import checkPalindrome from './algorithms/checkPalindrome'
 import executeOrder from './algorithms/executeOrder'
 import hoistingExample from './algorithms/hoistingExample'
 import findFriends from './algorithms/findFriends'
+import persistentBugger from './algorithms/persistentBugger'
 
 
 // app.get('/', function (req, res) {
@@ -18,7 +19,6 @@ import findFriends from './algorithms/findFriends'
 app.listen(3000, function () {
   console.log('workshop-server working on port 3000!');
 });
-
 
 // checks a number if it is prime
 // console.log(isPrime(16))
@@ -45,5 +45,7 @@ app.listen(3000, function () {
 // Hoisting
 // hoistingExample()
 
-findFriends(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
+// findFriends(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
 // returnStringAsSortedBlocks('21AxBz')
+
+persistentBugger(39)
