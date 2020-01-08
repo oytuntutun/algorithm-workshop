@@ -10,12 +10,11 @@ const persistentBugger = (num) => {
   })
 
   if(numerify.toString().length !== 1) {
-    console.log('working')
     count += 1
     persistentBugger(numerify);
   }
 
-  console.log(count)
+  return count
 }
 
 export default persistentBugger

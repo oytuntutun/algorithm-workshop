@@ -10,6 +10,7 @@ import executeOrder from './algorithms/executeOrder'
 import hoistingExample from './algorithms/hoistingExample'
 import findFriends from './algorithms/findFriends'
 import persistentBugger from './algorithms/persistentBugger'
+import formatAStringOfNames from './algorithms/formatAStringOfNames'
 
 
 // app.get('/', function (req, res) {
@@ -40,7 +41,7 @@ app.listen(3000, function () {
 // console.log(checkPalindrome('A, man a plan a canal Panama'))
 
 // find description in related file algorithms/excecuteOrder.js
-// executeOrder()
+executeOrder()
 
 // Hoisting
 // hoistingExample()
@@ -48,4 +49,12 @@ app.listen(3000, function () {
 // findFriends(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
 // returnStringAsSortedBlocks('21AxBz')
 
-persistentBugger(39)
+console.log(persistentBugger(39))
+
+const given = [
+  {name: 'Bart'},
+  {name:'Oytun'},
+  {name: 'Lisa'},
+  {name: 'Ayaz'}
+]
+// console.log(formatAStringOfNames(given))

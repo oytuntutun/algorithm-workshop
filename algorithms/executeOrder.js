@@ -6,8 +6,8 @@
 const leads = [
   { name: 'John', address: 'first street' },
   { name: 'Hasan', address: 'second street' },
-  { name: 'Abdurrezzak', address: 'third street' },
-  { name: 'Oytun', address: 'forth street' }
+  { name: 'Doe', address: 'third street' },
+  { name: 'Oytun', address: 'fourth street' }
 ]
 
 const template = '{Hello*Hi*Cheers*Happy Week*No Monday Syndrome} **name**, are you a {beauty*jerk}? {Meet*Fight*play pool with} me at **address**'
@@ -23,7 +23,6 @@ const executeOrder = () => {
       let indexOfFirstOpening = modifiedTemplate.indexOf(char)
       openingBrackets.push(indexOfFirstOpening + openingBrackets.length + closingBrackets.length + 1)
       modifiedTemplate.splice( indexOfFirstOpening ,1)
-      // console.log(openingBrackets)
     }
 
     // find indexes for closing area
