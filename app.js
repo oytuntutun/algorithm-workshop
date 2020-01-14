@@ -11,6 +11,11 @@ import hoistingExample from './algorithms/hoistingExample'
 import findFriends from './algorithms/findFriends'
 import persistentBugger from './algorithms/persistentBugger'
 import formatAStringOfNames from './algorithms/formatAStringOfNames'
+import countSmileys from './algorithms/countSmileys'
+import socks from './algorithms/socks'
+import {rangeOfNumbers, countdown} from './algorithms/recursiveSample'
+import highestScoringWord from './algorithms/highestScoring'
+import checkWord from './algorithms/TRGrammerRule'
 
 
 // app.get('/', function (req, res) {
@@ -41,7 +46,7 @@ app.listen(3000, function () {
 // console.log(checkPalindrome('A, man a plan a canal Panama'))
 
 // find description in related file algorithms/excecuteOrder.js
-executeOrder()
+// executeOrder()
 
 // Hoisting
 // hoistingExample()
@@ -49,7 +54,7 @@ executeOrder()
 // findFriends(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
 // returnStringAsSortedBlocks('21AxBz')
 
-console.log(persistentBugger(39))
+// console.log(persistentBugger(39))
 
 const given = [
   {name: 'Bart'},
@@ -57,4 +62,19 @@ const given = [
   {name: 'Lisa'},
   {name: 'Ayaz'}
 ]
+
 // console.log(formatAStringOfNames(given))
+
+const smileys = [':D',':~)',';~D',':)']
+// console.log(countSmileys(smileys))
+
+
+// console.log(socks(7, [1,2,1,2,1,3,2,2]))
+
+// console.log('rangeofnums', rangeOfNumbers(2, 9))
+
+// console.log('countdown',countdown(10)); // [5, 4, 3, 2, 1]
+
+// console.log(checkWord('gözlük'))
+
+console.log(highestScoringWord('what time are we climbing up the volcano'))
