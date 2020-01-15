@@ -3,10 +3,10 @@
 
 const isPrime = (number) => {
   // number should be divisable to numbers between 2(excluded)-number(included)
-  for(let i = 2; i < number; i++)
-    if(number % i === 0) return `${number} is not prime`
+  for (let i = 2; i < number; i++)
+    if (number % i === 0) return `${number} is not prime`
 
-    return `${number} is prime`
+  return `${number} is prime`
 }
 
 export default isPrime

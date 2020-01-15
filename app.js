@@ -13,7 +13,7 @@ import persistentBugger from './algorithms/persistentBugger'
 import formatAStringOfNames from './algorithms/formatAStringOfNames'
 import countSmileys from './algorithms/countSmileys'
 import socks from './algorithms/socks'
-import {rangeOfNumbers, countdown} from './algorithms/recursiveSample'
+import { rangeOfNumbers, countdown } from './algorithms/recursiveSample'
 import highestScoringWord from './algorithms/highestScoring'
 import checkWord from './algorithms/TRGrammerRule'
 
@@ -57,15 +57,15 @@ app.listen(3000, function () {
 // console.log(persistentBugger(39))
 
 const given = [
-  {name: 'Bart'},
-  {name:'Oytun'},
-  {name: 'Lisa'},
-  {name: 'Ayaz'}
+  { name: 'Bart' },
+  { name: 'Oytun' },
+  { name: 'Lisa' },
+  { name: 'Ayaz' }
 ]
 
 // console.log(formatAStringOfNames(given))
 
-const smileys = [':D',':~)',';~D',':)']
+const smileys = [':D', ':~)', ';~D', ':)']
 // console.log(countSmileys(smileys))
 
 

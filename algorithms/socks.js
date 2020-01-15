@@ -9,7 +9,7 @@
 // ar: the colors of each sock
 
 const socks = (n, arr) => {
-  let sorted = arr.sort( (a,b) => a - b);
+  let sorted = arr.sort((a, b) => a - b);
   let pairs = 0;
 
   // arr.length could be used instead of n

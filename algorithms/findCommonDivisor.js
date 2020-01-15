@@ -8,17 +8,17 @@ const findCommonDivisor = (a, b) => {
 
   // find all divisors of a
   for (var i = 0; i <= a; i++) {
-    if(a % i === 0) firstDividers.push(i)
+    if (a % i === 0) firstDividers.push(i)
   }
 
   // find all divisors of b
   for (var i = 0; i <= b; i++) {
-    if(b % i === 0) secondDividers.push(i)
+    if (b % i === 0) secondDividers.push(i)
   }
 
   // find common divisors and store them in commonDividers
   firstDividers.forEach((x) => {
-    if(secondDividers.includes(x)) commonDividers.push(x)
+    if (secondDividers.includes(x)) commonDividers.push(x)
   })
 
   console.log(

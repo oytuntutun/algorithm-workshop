@@ -5,8 +5,8 @@ const checkWord = (word) => {
 
   // find all vovels in the word
   let filterVovels = word.split('').filter((vovel) => {
-    if(checkVovel.test(vovel)) {
-       return vovel
+    if (checkVovel.test(vovel)) {
+      return vovel
     }
   })
 
@@ -14,7 +14,7 @@ const checkWord = (word) => {
   let vovelWord = filterVovels.join('')
 
   // our rule doesn't apply to words with one vovel
-  if(!vovelWord.length || vovelWord.length === 1) return 'no word or one vovel'
+  if (!vovelWord.length || vovelWord.length === 1) return 'no word or one vovel'
 
   return checkHardSound.test(vovelWord) || checkSoftSound.test(vovelWord)
     ? true

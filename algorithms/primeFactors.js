@@ -7,7 +7,7 @@ const primeFactors = (maxNumber) => {
 
   // loop the numbers starting from 2 until maxNumber if it is prime store it
   for (let i = 2; i < maxNumber; i++) {
-    if(isPrime(i) === `${i} is prime`) {
+    if (isPrime(i) === `${i} is prime`) {
       foundPrimes.push(i)
     }
   }

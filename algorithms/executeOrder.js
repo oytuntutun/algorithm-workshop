@@ -19,17 +19,17 @@ const executeOrder = () => {
   let findIndexes = modifiedTemplate.forEach((char) => {
     let mainTemplate = template
     // find indexes for opening area
-    if(char === '{') {
+    if (char === '{') {
       let indexOfFirstOpening = modifiedTemplate.indexOf(char)
       openingBrackets.push(indexOfFirstOpening + openingBrackets.length + closingBrackets.length + 1)
-      modifiedTemplate.splice( indexOfFirstOpening ,1)
+      modifiedTemplate.splice(indexOfFirstOpening, 1)
     }
 
     // find indexes for closing area
-    if(char === '}') {
+    if (char === '}') {
       let indexOfLastOpening = modifiedTemplate.indexOf(char)
       closingBrackets.push(indexOfLastOpening + closingBrackets.length + openingBrackets.length)
-      modifiedTemplate.splice( indexOfLastOpening ,1)
+      modifiedTemplate.splice(indexOfLastOpening, 1)
     }
     return
   })
@@ -46,7 +46,7 @@ const executeOrder = () => {
     return words
   })
 
-  leads.forEach((x, index)=> {
+  leads.forEach((x, index) => {
     let text = template
     let properties = Object.keys(x)
 
@@ -55,7 +55,7 @@ const executeOrder = () => {
 
       foundStrings.forEach((y, i) => {
         // remove found strings from template, replace them depending on string number
-        text = text.replace(`{${y}}`, stringsInFinal[i][index%stringsInFinal[i].length])
+        text = text.replace(`{${y}}`, stringsInFinal[i][index % stringsInFinal[i].length])
       })
     })
     console.log(text)

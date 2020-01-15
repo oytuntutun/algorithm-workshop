@@ -3,7 +3,7 @@ let final = []
 
 export const rangeOfNumbers = (startNum, endNum) => {
   final.push(startNum)
-  if(startNum === endNum) {
+  if (startNum === endNum) {
     return [startNum]
   } else {
     rangeOfNumbers(startNum + 1, endNum)
@@ -13,12 +13,12 @@ export const rangeOfNumbers = (startNum, endNum) => {
 
 
 export const countdown = (n) => {
-  if(n < 1) {
+  if (n < 1) {
     return []
   } else {
     const result = countdown(n - 1)
     result.push(n)
-    return result.sort((a,b) => b - a)
+    return result.sort((a, b) => b - a)
   }
 }
 
@@ -44,9 +44,9 @@ export const translatePigLatin = (str) => {
     }
     notVovelLetters.push(letters[i])
   }
-  console.log('bankai',notVovelLetters)
+  console.log('bankai', notVovelLetters)
 
-  if(checkVovel.test(firstLetter)) {
+  if (checkVovel.test(firstLetter)) {
     console.log('vovel')
     return firstLetter + letters.join('') + 'way'
   } else {

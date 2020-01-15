@@ -6,7 +6,7 @@
 const findFriends = (friendList) => {
   let myFriends = []
   friendList.forEach((friend) => {
-    if(friend.length === 4) {
+    if (friend.length === 4) {
       myFriends.push(friend)
     }
   })
